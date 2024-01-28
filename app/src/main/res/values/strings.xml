@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sample Application</string>
+    <string name="navigate_to_second">Start Fragment 2</string>
+    <string name="navigate_to_third">Start Fragment 3</string>
+    <string name="go_to_second_activity">Start second Activity</string>
+    <string name="navigate_to_details_two">Back to previous Activity wth current screen</string>
+    <string name="fragment_one">Fragment One</string>
+    <string name="details_fragment_one">Details Fragment One</string>
+</resources>

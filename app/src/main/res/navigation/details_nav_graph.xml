@@ -1,0 +1,18 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/detailsOneFragment">
+    <fragment
+        android:id="@+id/detailsOneFragment"
+        android:name="com.example.sampleapplication.details.DetailsOneFragment"
+        android:label="Details Screen1">
+        <action
+            android:id="@+id/action_detailsOneFragment_to_detailsTwoFragment"
+            app:destination="@id/detailsTwoFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailsTwoFragment"
+        android:name="com.example.sampleapplication.details.DetailsTwoFragment"
+        android:label="Details Screen2" />
+</navigation>

@@ -1,0 +1,40 @@
+ext {
+    sdk_versions = [
+            compileSdk  :   33,
+            minSdk      :   24,
+            targetSdk   :   33
+    ]
+
+    versions = [junit          : "4.13.2",
+                appcompat      : "1.1.0",
+                contraintlayout: "2.1.4",
+                material       : '1.11.0',
+                retrofitVersion: '2.6.0',
+                coroutineTest  : '1.8.0-RC2',
+                espressoTest   : '3.5.1'
+    ]
+
+
+    androidX = [
+            appcompatLib     : "androidx.appcompat:appcompat:${versions.appcompat}",
+            constraintLayoutLib  : "androidx.constraintlayout:constraintlayout:${versions.contraintlayout}",
+            materiallib  : "com.google.android.material:material:${versions.material}",
+    ]
+
+    androidtest = [
+            jnuit : "junit:junit:${versions.junit}",
+            kotlin_coroutines_test : "org.jetbrains.kotlinx:kotlinx-coroutines-test:${versions.coroutineTest}",
+            espresso_core : "androidx.test.espresso:espresso-core:${versions.espresso_core}",
+            test_ext : "androidx.test.ext:junit:${versions.test_ext}",
+    ]
+
+    retrofit_dependency = [
+            retrofit_version   : "com.squareup.retrofit2:retrofit:${versions.retrofitVersion}",
+            gsonConverter      : "com.squareup.retrofit2:converter-gson:${versions.retrofitVersion}",
+            logging_interceptor: 'com.squareup.okhttp3:logging-interceptor:3.4.1',
+            okhttp3            : 'com.squareup.okhttp3:okhttp:3.4.1',
+            scalars            : "com.squareup.retrofit2:converter-scalars:${versions.retrofitVersion}",
+            okhttp             : "com.squareup.okhttp:okhttp:2.7.5"
+    ]
+
+}
